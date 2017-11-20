@@ -10,11 +10,11 @@ function fuzzyMatch(collection, combination){
   let com = combination.length;
   return collection.filter(function(name){
     return name.slice(0, com) === combination;
-  })
+  });
 }
 
 function matchName(collection, name){
   return collection.filter(function(driver){
     return driver.name === name;
-  })
+  });
 }
